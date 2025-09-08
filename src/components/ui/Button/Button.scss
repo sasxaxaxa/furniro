@@ -4,27 +4,36 @@
   &-yellow {
     background-color: var(--color-yellow);
     color: var(--color-white-1);
-    font-weight: 700;
-    font-size: 16px;
-    text-transform: uppercase;
   }
 
   &-white-yellow {
     background-color: var(--color-white);
     border: 1px solid var(--color-yellow);
     color: var(--color-yellow);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
+
   }
 
   &-hero {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
     padding-block: 25px;
     padding-inline: 72px;
   }
 
   &-our-products {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
     padding-block: 12px;
     padding-inline: 78px;
+  }
+
+  &-inspiration {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    padding-block: 12px;
+    padding-inline: 36px;
   }
 }

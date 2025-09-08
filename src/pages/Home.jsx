@@ -2,6 +2,9 @@ import Header from '../components/layouts/Header/Header.jsx';
 import Hero from "../sections/Hero/Hero.jsx";
 import Browse from "../sections/Browse/Browse.jsx";
 import OurProducts from "../sections/OurProducs/OurProducts.jsx";
+import Inspiration from "../sections/Inspiration/Inspiration.jsx";
+import CarouselBig from "../components/ui/CarouselBig.jsx";
+import Share from "../sections/Share/Share.jsx";
 
 const Home = () => {
   return (
@@ -10,6 +13,9 @@ const Home = () => {
       <Hero />
       <Browse />
       <OurProducts />
+      <Inspiration />
+      {/*<CarouselBig />*/}
+      <Share />
     </div>
   )
 }
