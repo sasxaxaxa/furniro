@@ -1,0 +1,39 @@
+.header {
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 54px;
+    margin-right: 100px;
+    margin-block: 30px;
+  }
+
+  &__nav {
+    font-weight: 500;
+    font-size: 16px;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+      column-gap: 75px;
+    }
+  }
+
+  &__actions {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      column-gap: 45px;
+    }
+  }
+
+  &__logo {
+    gap: 5px;
+    font-family: var(--font-family-other);
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+}
