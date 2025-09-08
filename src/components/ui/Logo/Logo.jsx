@@ -1,12 +1,12 @@
 const title = 'Home'
 
-const Logo = ({href = '/'}) => {
+const Logo = ({href = '/', className}) => {
   const logoPath = `src/assets/logo.svg`;
 
   return (
     <a
+      className={`logo ${className || ''}`}
       href={href}
-      className="logo"
       title={title}
       aria-label={title}
     >
@@ -16,6 +16,7 @@ const Logo = ({href = '/'}) => {
         width={50}
         height={32}
       />
+      <span className="logo__title">Furniro</span>
     </a>
   )
 }

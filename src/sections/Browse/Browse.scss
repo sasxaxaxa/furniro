@@ -1,0 +1,31 @@
+.browse {
+  margin-block: 56px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-gray-5);
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-gray-2);
+    margin-bottom: 62px;
+  }
+}

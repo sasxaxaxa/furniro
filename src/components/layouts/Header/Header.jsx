@@ -1,4 +1,4 @@
-import Logo from "../../ui/Logo.jsx";
+import Logo from "../../ui/Logo/Logo.jsx";
 import './Header.scss'
 
 const headerLinks = [
@@ -44,10 +44,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__inner">
-        <a className="header__logo" href="/">
-          <Logo/>
-          <span className="header__logo-title">Furniro</span>
-        </a>
+        <Logo
+          className="header__logo"
+        />
         <nav className="header__nav">
           <ul className="header__nav-list">
             {headerLinks.map((link, index) => (
@@ -84,4 +83,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

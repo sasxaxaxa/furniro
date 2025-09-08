@@ -1,0 +1,30 @@
+.button {
+  font-family: var(--font-family-base);
+
+  &-yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-white-1);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &-white-yellow {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-yellow);
+    color: var(--color-yellow);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &-hero {
+    padding-block: 25px;
+    padding-inline: 72px;
+  }
+
+  &-our-products {
+    padding-block: 12px;
+    padding-inline: 78px;
+  }
+}
