@@ -19,13 +19,9 @@ const Button = (props) => {
   const specificProps = isLink ? linkProps : undefined
 
 
-  const iconComponent = icon && (
-    <img
-      className="button__icon"
-      src={icon}
-      alt=''
-    />
-  )
+  const iconComponent = typeof icon === 'string'
+    ? <img className="button__icon" src={icon} alt="" />
+    : icon
 
   return (
     <Component

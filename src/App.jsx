@@ -3,6 +3,7 @@ import './assets/styles/index.js'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./components/layouts/Header/Header.jsx";
 import Footer from "./components/layouts/Footer/Footer.jsx";
+import Shop from "./pages/Shop/Shop.jsx";
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home />}/>
+            <Route path="/shop" element={<Shop />}/>
           </Routes>
         </main>
 

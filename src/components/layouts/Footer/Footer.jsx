@@ -29,14 +29,14 @@ const footerItems = [
 
 const Footer = () => {
   return (
-    <footer className="footer container">
-      <div className="footer__inner">
+    <footer className="footer">
+      <div className="footer__inner container">
         <div className="footer__first-column">
           <Logo
             className="footer__logo"
           />
           <p className="footer__address">
-            400 University Drive Suite 200 Coral Gables,
+            400 University Drive Suite 200 Coral Gables,<br/>
             FL 33134 USA
           </p>
         </div>
@@ -49,7 +49,9 @@ const Footer = () => {
                 {Array.isArray(items) ? (
                   items.map((item, i) => (
                     <li key={i} className="footer__list-small-item">
-                      <a>
+                      <a
+                        href='/'
+                      >
                         {item}
                       </a>
                     </li>
