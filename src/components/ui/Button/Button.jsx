@@ -3,22 +3,47 @@ import './Button.scss'
 
 const Button = (props) => {
   const {
+    className,
     label,
     mode,
     style,
-    icon
+    icon,
+    href,
+    ...rest
   } = props
 
+  const isLink = href !== undefined
+  const Component = isLink ? 'a' : 'button'
+  const title = label ? label : ''
+  const linkProps = { href }
+  const specificProps = isLink ? linkProps : undefined
+
+
+  const iconComponent = icon && (
+    <img
+      className="button__icon"
+      src={icon}
+      alt=''
+    />
+  )
+
   return (
-    <button
+    <Component
       className={
         classnames(
+          className,
           'button',
           `button-${mode}`,
           `button-${style}`
-        )}>
-      {label}
-    </button>
+        )}
+      title={title}
+      aria-label={title}
+      {...specificProps}
+      {...rest}
+    >
+      {iconComponent}
+      {title}
+    </Component>
   )
 }
 

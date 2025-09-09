@@ -30,11 +30,14 @@ const CarouselBig = () => {
         </div>
       </div>
 
-      <button className="carousel-control next" onClick={nextSlide}>
-        &#10095;
-      </button>
+      <Button
+        className="carousel__control control next"
+        icon="src/assets/icons/right-arrow-yellow.svg"
+        mode="carousel-slide"
+        onClick={nextSlide}
+      />
     </div>
   );
 };
 
-export default CarouselBig;
+export default CarouselBig

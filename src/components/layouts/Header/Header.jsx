@@ -1,5 +1,6 @@
 import Logo from "../../ui/Logo/Logo.jsx";
 import './Header.scss'
+import Button from "../../ui/Button/Button.jsx";
 
 const headerLinks = [
   {
@@ -20,25 +21,28 @@ const headerLinks = [
   },
 ]
 
-const headerActions = [
+const actionsLinks = [
   {
-    label: 'icon',
-    iconName: '/',
+    mode: 'transparent',
+    icon: 'src/assets/icons/account.svg',
+    href: '/',
   },
   {
-    label: 'icon',
-    iconName: '/',
+    mode: 'transparent',
+    icon: 'src/assets/icons/search.svg',
+    href: '/',
   },
   {
-    label: 'icon',
-    iconName: '/',
+    mode: 'transparent',
+    icon: 'src/assets/icons/heart.svg',
+    href: '/',
   },
   {
-    label: 'icon',
-    iconName: '/',
-  },
+    mode: 'transparent',
+    icon: 'src/assets/icons/shopping-cart.svg',
+    href: '/',
+  }
 ]
-
 
 const Header = () => {
   return (
@@ -66,12 +70,17 @@ const Header = () => {
         </nav>
         <div className="header__actions">
           <ul className="header__actions-list">
-            {headerActions.map((action, index) => (
+            {actionsLinks.map((action, index) => (
               <li
                 key={index}
-                className="header__nav-item"
+                className="header__actions-item"
               >
-                {action.label}
+                <Button
+                  mode={action.mode}
+                  style='header-action'
+                  icon={action.icon}
+                  href={action.href}
+                />
               </li>
             ))}
           </ul>

@@ -14,7 +14,6 @@ const Home = () => {
       <Browse />
       <OurProducts />
       <Inspiration />
-      {/*<CarouselBig />*/}
       <Share />
     </div>
   )
