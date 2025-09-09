@@ -8,7 +8,7 @@ const Share = () => {
           Share your setup with
         </h2>
         <p className="share__description">
-          #FurniroFurniture
+          #FuniroFurniture
         </p>
       </div>
       <div className="share__images">

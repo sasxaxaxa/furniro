@@ -1,6 +1,7 @@
 import Logo from "../../ui/Logo/Logo.jsx";
 import './Header.scss'
 import Button from "../../ui/Button/Button.jsx";
+import { Link } from 'react-router-dom';
 
 const headerLinks = [
   {
@@ -50,6 +51,7 @@ const Header = () => {
       <div className="header__inner">
         <Logo
           className="header__logo"
+          image={true}
         />
         <nav className="header__nav">
           <ul className="header__nav-list">

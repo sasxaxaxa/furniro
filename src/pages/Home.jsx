@@ -3,13 +3,12 @@ import Hero from "../sections/Hero/Hero.jsx";
 import Browse from "../sections/Browse/Browse.jsx";
 import OurProducts from "../sections/OurProducs/OurProducts.jsx";
 import Inspiration from "../sections/Inspiration/Inspiration.jsx";
-import CarouselBig from "../components/ui/CarouselBig.jsx";
 import Share from "../sections/Share/Share.jsx";
+import Footer from "../components/layouts/Footer/Footer.jsx";
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <Hero />
       <Browse />
       <OurProducts />

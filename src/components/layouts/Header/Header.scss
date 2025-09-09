@@ -38,10 +38,10 @@
   }
 
   &__logo {
+    display: flex;
     gap: 5px;
     font-family: var(--font-family-other);
     font-weight: 700;
     font-size: 34px;
   }
-
 }

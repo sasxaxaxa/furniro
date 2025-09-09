@@ -1,3 +1,51 @@
 .footer {
+  &__inner {
+    display: grid;
+    grid-template-columns: 285px auto;
+    gap: 136px;
+    padding-block: 48px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
 
+  }
+
+  &__logo {
+    gap: 5px;
+    font-family: var(--font-family-other);
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  &__list-big {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #9f9f9f
+  }
+
+  &__list-big-item {
+    margin-bottom: 55px;
+  }
+
+  &__list-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 46px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+  }
+
+  &__copyright {
+    padding-block: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-black);
+  }
 }

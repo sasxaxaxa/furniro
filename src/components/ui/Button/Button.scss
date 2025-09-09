@@ -59,4 +59,14 @@
 
     box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
   }
+
+  &-input {
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-black);
+
+    border-bottom: 1px solid var(--color-black);
+    padding-bottom: 3px;
+  }
 }
