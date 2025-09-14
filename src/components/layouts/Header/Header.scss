@@ -1,4 +1,8 @@
 .header {
+  a {
+    color: var(--color-black);
+  }
+
   &__inner {
     display: flex;
     flex-direction: row;

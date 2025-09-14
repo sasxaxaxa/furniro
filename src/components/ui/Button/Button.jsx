@@ -7,8 +7,9 @@ const Button = (props) => {
     label,
     mode,
     style,
-    icon,
     href,
+    icon,
+    iconPosition = 'after',
     ...rest
   } = props
 
@@ -37,8 +38,9 @@ const Button = (props) => {
       {...specificProps}
       {...rest}
     >
-      {iconComponent}
+      {iconPosition === 'after' && iconComponent}
       {title}
+      {iconPosition === 'before' && iconComponent}
     </Component>
   )
 }

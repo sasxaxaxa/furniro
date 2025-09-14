@@ -1,6 +1,10 @@
 .footer {
   border-top: 1px solid #d9d9d9;
 
+  a {
+    color: var(--color-black);
+  }
+
   &__inner {
     display: grid;
     grid-template-columns: 285px 710px;

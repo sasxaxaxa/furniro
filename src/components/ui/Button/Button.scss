@@ -20,6 +20,11 @@
     color: var(--color-yellow);
   }
 
+  &-white {
+    background-color: var(--color-white-1);
+    color: var(--color-yellow);
+  }
+
   &-transparent {
     background: transparent;
   }
@@ -29,7 +34,7 @@
     font-size: 16px;
     text-transform: uppercase;
     padding-block: 25px;
-    padding-inline: 72px;
+    max-width: 222px;
   }
 
   &-our-products {
@@ -91,4 +96,22 @@
     border-radius: 10px;
     min-width: 60px;
   }
+
+  &-add-to-cart {
+    padding-block: 12px;
+    width: 202px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #E89F71;
+  }
+
+  &-product-card-other {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    gap: 2px;
+  }
+
 }

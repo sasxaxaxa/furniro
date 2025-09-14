@@ -18,11 +18,11 @@ const Hero = () => {
           label="Buy now"
           mode="yellow"
           style="hero"
+          href="/shop"
         />
       </div>
     </section>
   )
-
 }
 
 export default Hero

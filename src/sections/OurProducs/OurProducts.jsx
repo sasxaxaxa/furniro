@@ -1,5 +1,5 @@
 import CARDS_DATA from '../../constants/CARDS_DATA.json';
-import ProductCard from "../../components/cards/ProductCard.jsx";
+import ProductCard from "../../components/cards/ProductCard";
 import './OurProducts.scss'
 import Button from "../../components/ui/Button/Button.jsx";
 
