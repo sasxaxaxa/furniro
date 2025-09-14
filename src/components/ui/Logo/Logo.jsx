@@ -1,8 +1,6 @@
 const title = 'Home'
 
 const Logo = ({href = '/', className, image = false}) => {
-  const logoPath = `src/assets/logo.svg`;
-
   return (
     <a
       className={`logo ${className || ''}`}
@@ -12,7 +10,7 @@ const Logo = ({href = '/', className, image = false}) => {
     >
       {image && (
         <img
-          src={logoPath}
+          src="/icons/logo.svg"
           alt="Funiro Logo"
           width={50}
           height={32}

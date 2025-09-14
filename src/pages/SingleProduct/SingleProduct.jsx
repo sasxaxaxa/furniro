@@ -1,6 +1,16 @@
 import { useParams } from "react-router-dom";
 import CARDS_DATA from '../../constants/CARDS_DATA.json';
-import './SingleProduct.scss'
+import Rating from '../../components/elements/Rating';
+import Button from "../../components/ui/Button/Button";
+import './SingleProduct.scss';
+
+
+const colors = {
+  violet: "#816DFA",
+  black: "#000000",
+  yellow: "#B88E2F"
+}
+
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -15,8 +25,8 @@ const SingleProduct = () => {
           <ul className="product__image-others-list">
             {product.otherImages.map((item, index) => (
               <li
-              className="product__image-others-container"
-              key={index}
+                className="product__image-others-container"
+                key={index}
               >
                 <img
                   className="product__image-other"
@@ -40,10 +50,66 @@ const SingleProduct = () => {
         <p className="product__price">
           Rp {product.price.toLocaleString('de-DE')}
         </p>
-        <p className="product__info">
+        <div className="product__rate">
+          <Rating
+            className="product__rate-count"
+            rating={product.rate}
+          />
+          <p className="product__rate-review">
+            {product.customerReview} Customer Review
+          </p>
+        </div>
+        <p className="product__about">
           {product.info}
         </p>
-
+        <div className="product__sizes">
+          <h5 className="product__sizes-title">
+            Size
+          </h5>
+          <ul className="product__sizes-list">
+            {product.sizes.map((item, index) => (
+              <li key={index}>
+                <Button
+                  label={item}
+                  mode={index === 0 ? 'yellow' : 'banana'}
+                  style="product-size"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="product__colors">
+          <h5 className="product__colors-title">
+            Color
+          </h5>
+          <ul className="product__colors-list">
+            {product.colors.map((item, index) => (
+              <li key={index}>
+                <Button
+                  style="product-color"
+                  customStyle={{ backgroundColor: colors[item] }}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="product__action-buttons">
+            <Button 
+              label="1"
+              mode="transparent-border"
+              style="product-action"
+            />
+            <Button
+              label="Add To Cart"
+              mode="transparent-border"
+              style="product-action"
+            />
+            <Button 
+              label="+ Compare"
+              mode="transparent-border"
+              style="product-action"
+            />
+        </div>
       </div>
     </section>
   );

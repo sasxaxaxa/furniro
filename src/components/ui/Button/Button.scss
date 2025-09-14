@@ -29,6 +29,16 @@
     background: transparent;
   }
 
+  &-transparent-border {
+    background: transparent;
+    border: 1px solid #000;
+  }
+
+  &-banana {
+    background-color: #F9F1E7;
+    color: var(--color-black);
+  }
+
   &-hero {
     font-weight: 700;
     font-size: 16px;
@@ -112,6 +122,31 @@
     line-height: 150%;
     color: #fff;
     gap: 2px;
+  }
+
+  &-product-size {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  &-product-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  &-product-action {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 15px;
+
+    padding-inline: 47px;
+    padding-block: 17px;
   }
 
 }

@@ -17,14 +17,16 @@
     font-weight: 500;
     font-size: 24px;
     color: #9f9f9f;
+    margin-bottom: 10px;
   }
 
-  &__info {
+  &__about {
     font-weight: 400;
     font-size: 13px;
     color: #000;
     max-width: 582px;
     text-wrap: wrap;
+    margin-top: 13px;
   }
 
   &__images {
@@ -67,5 +69,52 @@
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+
+  &__rate {
+    display: flex;
+    flex-direction: row;
+
+    &-review {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-weight: 400;
+      font-size: 13px;
+      color: #9f9f9f;
+    }
+
+    &-review::before {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 30px;
+      background-color: #ccc;
+      margin: 0 22px;
+    }
+  }
+
+  &__sizes, &__colors {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      column-gap: 16px;
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #9f9f9f;
+      margin-top: 22px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__action-buttons {
+    margin-top: 32px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
   }
 }

@@ -20,7 +20,8 @@
       "black",
       "yellow"
     ],
-    "rate": 4,
+    "rate": 5,
+    "customerReview": 5,
     "title": "Alcina",
     "description": "Cozy velvet chair",
     "info": "Designed to offer a perfect blend of comfort and elegance, the Alcina armchair features plush velvet upholstery and a supportive structure, making it ideal for relaxing, reading, or adding a touch of sophistication to any room.",
@@ -38,17 +39,16 @@
       "/images/photozagl.png"
     ],
     "sizes": [
-      "XS",
-      "L",
-      "XL"
+      "M",
+      "L" 
     ],
     "colors": [
       "violet",
       "black",
       "yellow"
     ],
-    "rate": 4,
-    "customerReview": 5,
+    "rate": 4.5,
+    "customerReview": 2,
     "title": "Solano",
     "description": "Soft velvet chair",
     "info": "With its vibrant orange hue and plush velvet upholstery, the Solano armchair offers a perfect mix of style and comfort, making it a standout addition to any living room or cozy corner.",

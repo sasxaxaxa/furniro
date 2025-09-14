@@ -7,6 +7,7 @@ const Button = (props) => {
     label,
     mode,
     style,
+    customStyle,
     href,
     icon,
     iconPosition = 'after',
@@ -33,6 +34,7 @@ const Button = (props) => {
           `button-${mode}`,
           `button-${style}`
         )}
+      style={customStyle}
       title={title}
       aria-label={title}
       {...specificProps}

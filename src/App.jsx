@@ -5,6 +5,7 @@ import Header from "./components/layouts/Header/Header.jsx";
 import Footer from "./components/layouts/Footer/Footer.jsx";
 import Shop from "./pages/Shop/Shop.jsx";
 import SingleProduct from "./pages/SingleProduct/SingleProduct.jsx";
+import ScrollToTop from "./components/elements/ScrollToTop.jsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Router>
         <Header />
+        <ScrollToTop />
 
         <main>
           <Routes>
