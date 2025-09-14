@@ -1,74 +1,225 @@
 [
   {
     "id": 1,
-    "title": "Syltherine",
-    "description": "Stylish cafe chair",
     "price": 2500000,
     "oldPrice": 3500000,
-    "image": "src/assets/images/product-card/image-1.jpg",
-    "specialOffer": "-30%"
+    "image": "/images/product-card/image-1.jpg",
+    "specialOffer": "-30%",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "title": "Alcina",
+    "description": "Cozy velvet chair",
+    "info": "Designed to offer a perfect blend of comfort and elegance, the Alcina armchair features plush velvet upholstery and a supportive structure, making it ideal for relaxing, reading, or adding a touch of sophistication to any room.",
+    "fulldescription": "Embodying modern sophistication and timeless comfort, the Alcina Velvet Armchair transforms any living space into a serene retreat. Wrapped in luxurious white velvet, it provides a soft, inviting seat that cradles the body with its ergonomic design. The sleek contours and sturdy frame ensure both style and durability, while the generous cushioning delivers an exceptional level of comfort for long, relaxing moments at home."
   },
   {
     "id": 2,
-    "title": "Leviosa",
-    "description": "Stylish cafe chair",
     "price": 2500000,
     "oldPrice": null,
-    "image": "src/assets/images/product-card/image-2.jpg",
-    "specialOffer": ""
+    "image": "/images/product-card/image-2.jpg",
+    "specialOffer": "",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Solano",
+    "description": "Soft velvet chair",
+    "info": "With its vibrant orange hue and plush velvet upholstery, the Solano armchair offers a perfect mix of style and comfort, making it a standout addition to any living room or cozy corner.",
+    "fullDescription": "The Solano Velvet Armchair brings warmth and energy to any interior. Its soft, cushioned seat and backrest cradle you in comfort while the striking orange velvet adds a playful yet elegant touch. Perfect for reading, relaxing, or enhancing the visual appeal of your living space, it combines modern design with enduring coziness."
   },
   {
     "id": 3,
-    "title": "Lolito",
-    "description": "Luxury big sofa",
     "price": 7000000,
     "oldPrice": 14000000,
-    "image": "src/assets/images/product-card/image-3.jpg",
-    "specialOffer": "-50%"
+    "image": "/images/product-card/image-3.jpg",
+    "specialOffer": "-50%",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Rivano",
+    "description": "Wooden bar stool",
+    "info": "Designed for both style and versatility, the Rivano bar stool combines a sturdy wooden frame with a soft cushioned seat, perfect for bars, cafes, home kitchens, or outdoor verandas.",
+    "fullDescription": "The Rivano Wooden Bar Stool blends elegance with functionality. Its polished wooden frame ensures durability, while the comfortable padded seat allows for long, relaxed seating. Adaptable to multiple settings—from casual home bars to chic cafes—it’s a versatile piece that brings warmth and style wherever it stands."
   },
   {
     "id": 4,
-    "title": "Respira",
-    "description": "Outdoor bar table and stool",
     "price": 500000,
     "oldPrice": null,
-    "image": "src/assets/images/product-card/image-4.jpg",
-    "specialOffer": "new"
+    "image": "/images/product-card/image-4.jpg",
+    "specialOffer": "New",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Elytra",
+    "description": "Luxury corner sofa",
+    "info": "The Elytra corner sofa combines premium white upholstery with a spacious, fold-out design, offering comfort and a sophisticated aesthetic ideal for designer interiors.",
+    "fullDescription": "The Elytra Luxury Corner Sofa elevates living spaces with its elegant white fabric and refined design. Fully foldable for overnight guests, it seamlessly balances style and functionality. Crafted with attention to detail, it provides a luxurious lounging experience while enhancing the room’s modern, designer ambiance."
   },
   {
     "id": 5,
-    "title": "Grifo",
-    "description": "Night lamp",
     "price": 1500000,
     "oldPrice": null,
-    "image": "src/assets/images/product-card/image-5.jpg",
-    "specialOffer": ""
+    "image": "/images/product-card/image-5.jpg",
+    "specialOffer": "",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Marina",
+    "description": "Sea-wave corner sofa",
+    "info": "Marina offers a serene seating experience with its sea-wave-colored upholstery and generous corner design, perfect for relaxation and socializing.",
+    "fullDescription": "The Marina Sea-Wave Corner Sofa creates a calm and inviting atmosphere in any living space. Its soft, ocean-inspired fabric and ample seating allow for ultimate comfort while hosting guests or enjoying quiet evenings. The contemporary design enhances modern interiors with a touch of natural tranquility."
   },
   {
     "id": 6,
-    "title": "Muggo",
-    "description": "Small mug",
     "price": 150000,
     "oldPrice": null,
-    "image": "src/assets/images/product-card/image-6.jpg",
-    "specialOffer": "new"
+    "image": "/images/product-card/image-6.jpg",
+    "specialOffer": "New",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Corallo",
+    "description": "Three-seat sofa",
+    "info": "Corallo is a stylish three-seater sofa in a sea-wave shade, offering both comfort and elegance for living rooms, lounges, or office spaces.",
+    "fullDescription": "The Corallo Three-Seat Sofa combines relaxed comfort with modern aesthetics. Upholstered in a soothing sea-wave color, it seats three comfortably while enhancing the room’s decor. Its sturdy frame and plush cushions make it a versatile choice for gatherings, reading, or casual relaxation."
   },
   {
     "id": 7,
-    "title": "Pingky",
-    "description": "Cute bed set",
     "price": 7000000,
     "oldPrice": 14000000,
-    "image": "src/assets/images/product-card/image-7.jpg",
-    "specialOffer": "-50%"
+    "image": "/images/product-card/image-7.jpg",
+    "specialOffer": "-50%",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Lumis",
+    "description": "Glass bar cabinet",
+    "info": "Lumis is a sleek glass bar cabinet with six spacious shelves, designed to integrate seamlessly into walls, providing both style and functional storage for glassware and spirits.",
+    "fullDescription": "The Lumis Glass Bar Cabinet elevates home entertaining with its transparent elegance. Six carefully arranged shelves display your collection of spirits, glassware, and decor in a sophisticated manner. Built to be recessed into walls, it maximizes space while maintaining a modern, refined aesthetic perfect for home bars or dining rooms."
   },
   {
     "id": 8,
-    "title": "Potty",
-    "description": "Minimalist flower pot",
     "price": 500000,
     "oldPrice": null,
-    "image": "src/assets/images/product-card/image-8.jpg",
-    "specialOffer": "new"
+    "image": "/images/product-card/image-8.jpg",
+    "specialOffer": "New",
+    "otherImages": [
+      "/images/photozagl.png",
+      "/images/photozagl.png",
+      "/images/photozagl.png"
+    ],
+    "sizes": [
+      "XS",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "violet",
+      "black",
+      "yellow"
+    ],
+    "rate": 4,
+    "customerReview": 5,
+    "title": "Velden",
+    "description": "Bedroom furniture set",
+    "info": "The Velden set features a compact wooden table with two drawers and a chair with a mesh back, combining practical storage with elegant design for bedrooms or cozy corners.",
+    "fullDescription": "The Velden Bedroom Set transforms small spaces with its thoughtful design and functional elegance. The petite table offers two drawers for storage, while the matching chair with a mesh back provides comfort and style. Perfect for work, reading, or decorative setups, this set combines simplicity with enduring charm."
   }
 ]

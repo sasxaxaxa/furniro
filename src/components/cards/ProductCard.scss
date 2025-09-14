@@ -82,6 +82,7 @@
     justify-content: center;
     transition: opacity 0.3s ease;
     row-gap: 24px;
+    z-index: 2;
   }
 
   &:hover .product-card__overlay {
@@ -100,4 +101,39 @@
     column-gap: 20px;
   }
 
+  &__special-offer {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    background-color: var(--color-yellow);
+    color: var(--color-white-1);
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+
+.blue {
+  background-color: #2EC1AC;
+}
+
+.red {
+  background-color: #E97171;
+}
+
+//заглушка для кнопок
+.product-card__overlay button {
+  pointer-events: none;
+  opacity: 0.2;
+  cursor: default;
 }

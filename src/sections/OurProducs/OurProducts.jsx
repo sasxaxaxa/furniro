@@ -13,12 +13,14 @@ const OurProducts = () => {
         {CARDS_DATA.map((item, index) => (
           <li key={index}>
             <ProductCard
+              id={item.id}
               title={item.title}
               description={item.description}
               price={item.price}
               oldPrice={item.oldPrice}
               image={item.image}
               imagePosition='top'
+              specialOffer={item.specialOffer}
             />
           </li>
         ))}
