@@ -11,8 +11,9 @@
   &__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 20px;
+    margin-inline: auto;
   }
 
   &__title {

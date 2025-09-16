@@ -21,7 +21,7 @@ const browseItems = [
 
 const Browse = () => {
   return (
-    <section className="browse container">
+    <section className="browse">
       <div className="browse__inner">
         <h2 className="browse__title">
           Browse The Range

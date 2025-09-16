@@ -1,13 +1,21 @@
+@import '../../assets/styles/mixins.scss';
+
 .hero {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
+  padding-right: 200px;
   background: url("src/assets/images/hero-background.jpg") no-repeat center;
   background-size: cover;
 
+  @include desktop {
+    justify-content: center;
+    padding-right: 0;
+    background: url("src/assets/images/hero-bg-small.jpg") no-repeat center;
+    background-size: cover;
+  }
+
   &__inner {
-    margin-right: 58px;
     margin-top: 153px;
     margin-bottom: 117px;
 
