@@ -37,11 +37,11 @@
   &__nav-list {
     gap: 75px;
     font-weight: 500;
-    
-    @media (width <= 1160px) {
+
+    @media (width <=1160px) {
       gap: 50px;
     }
-    
+
   }
 
   &__burger {
@@ -52,11 +52,19 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 360px;
+    width: 300px;
     background: white;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
     padding-top: 40px;
     padding-bottom: 20px;
-    z-index: 1000;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+
+    &.active {
+      max-height: 500px;
+      opacity: 1;
+    }
 
     &-nav {
       &-list {

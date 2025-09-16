@@ -63,34 +63,31 @@ const Header = () => {
           <ul className="header__actions-list">
             {actionsLinks.map((action, index) => (
               <li key={index} className="header__actions-item">
-                <Button mode={action.mode} style="header-action" icon={action.icon} href={action.href}/>
+                <Button mode={action.mode} style="header-action" icon={action.icon} href={action.href} />
               </li>
             ))}
           </ul>
         </div>
 
         <div className="header__burger">
-          <Hamburger toggled={isOpen} toggle={setIsOpen} 
-          color="#000000"
-          style={{height: "48px"}}
+          <Hamburger toggled={isOpen} toggle={setIsOpen}
+            color="#000000"
+            style={{ height: "48px" }}
           />
         </div>
       </div>
 
-      {isOpen && (
-        <div className="header__overlay">
-          <nav className="header__overlay-nav">
-            <ul className="header__overlay-nav-list">
-              {headerLinks.map((link, index) => (
-                <li key={index} className="header__overlay-nav-item">
-                  <Link to={link.href} className="header__overlay-nav-link">{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          
-        </div>
-      )}
+      <div className={`header__overlay ${isOpen ? 'active' : ''}`}>
+        <nav className="header__overlay-nav">
+          <ul className="header__overlay-nav-list">
+            {headerLinks.map((link, index) => (
+              <li key={index} className="header__overlay-nav-item">
+                <Link to={link.href} className="header__overlay-nav-link">{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
