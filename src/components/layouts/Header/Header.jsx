@@ -1,25 +1,15 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Squash as Hamburger } from "hamburger-react";
 import Logo from "../../ui/Logo/Logo.jsx";
-import './Header.scss'
 import Button from "../../ui/Button/Button.jsx";
-import { Link } from 'react-router-dom';
+import "./Header.scss";
 
 const headerLinks = [
-  {
-    label: 'Home',
-    href: '/',
-  },
-  {
-    label: 'Shop',
-    href: '/',
-  },
-  {
-    label: 'About',
-    href: '/',
-  },
-  {
-    label: 'Contact',
-    href: '/',
-  },
+  { label: "Home", href: "/" },
+  { label: "Shop", href: "/shop" },
+  { label: "About", href: "/" },
+  { label: "Contact", href: "/" },
 ]
 
 const actionsLinks = [
@@ -54,26 +44,17 @@ const actionsLinks = [
 ]
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header__inner">
-        <Logo
-          className="header__logo"
-          image={true}
-        />
+        <Logo className="header__logo" image={true} />
         <nav className="header__nav">
           <ul className="header__nav-list">
             {headerLinks.map((link, index) => (
-              <li
-                key={index}
-                className={`header__nav-item`}
-              >
-                <a
-                  href={link.href}
-                  className="header__nav-link"
-                >
-                  {link.label}
-                </a>
+              <li key={index} className="header__nav-item">
+                <Link to={link.href} className="header__nav-link">{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -81,25 +62,37 @@ const Header = () => {
         <div className="header__actions">
           <ul className="header__actions-list">
             {actionsLinks.map((action, index) => (
-              <li
-                key={index}
-                className="header__actions-item"
-              >
-                <Button
-                  mode={action.mode}
-                  style='header-action'
-                  icon={action.icon}
-                  href={action.href}
-                />
+              <li key={index} className="header__actions-item">
+                <Button mode={action.mode} style="header-action" icon={action.icon} href={action.href}/>
               </li>
             ))}
           </ul>
         </div>
+
+        <div className="header__burger">
+          <Hamburger toggled={isOpen} toggle={setIsOpen} 
+          color="#000000"
+          style={{height: "48px"}}
+          />
+        </div>
       </div>
+
+      {isOpen && (
+        <div className="header__overlay">
+          <nav className="header__overlay-nav">
+            <ul className="header__overlay-nav-list">
+              {headerLinks.map((link, index) => (
+                <li key={index} className="header__overlay-nav-item">
+                  <Link to={link.href} className="header__overlay-nav-link">{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          
+        </div>
+      )}
     </header>
+  );
+};
 
-
-  )
-}
-
-export default Header
+export default Header;

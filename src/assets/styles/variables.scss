@@ -1,4 +1,3 @@
-@import './mixins.scss';
 
 :root {
   --color-white-1: #FFFFFF;
@@ -19,13 +18,13 @@
   --container-width: 1240px;
 
 
-  @include laptop {
-    --container-padding-x: 80px;
-    --container-width: 830px;
-  }
+  // @include laptop {
+  //   --container-padding-x: 80px;
+  //   --container-width: 830px;
+  // }
 
-  @include tablets {
-    --container-padding-x: 50px;
-    --container-width: 670px;
-  }
+  // @include tablets {
+  //   --container-padding-x: 50px;
+  //   --container-width: 670px;
+  // }
 }
