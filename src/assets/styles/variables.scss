@@ -11,17 +11,19 @@
   --color-yellow: #B88E2F;
   --color-banana: #FFF3E3;
 
+
+
   --font-family-base: 'Poppins', sans-serif;
   --font-family-other: 'Montserrat', sans-serif;
 
   --container-padding-x: 100px;
   --container-width: 1240px;
 
-  @include tablet {
-    --container-padding-x: 80px;
-  }
+  // @include tablet {
+  //   --container-padding-x: 80px;
+  // }
 
-  @include mobile {
-    --container-padding-x: 50px;
-  }
+  // @include mobile {
+  //   --container-padding-x: 50px;
+  // }
 }

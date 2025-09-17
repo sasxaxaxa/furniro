@@ -19,12 +19,22 @@
     }
 
     @include tablet {
+      width: 251px;
+      height: 316px;
+    }
+
+    @media screen and (width <= 840px) {
       width: 209px;
       height: 263px;
     }
 
     @include mobile {
-      width: 285px;
+      width: 355px;
+      height: 447px;
+    }
+
+    @include mobile-s {
+      width: 280px;
       height: 359px;
     }
   }

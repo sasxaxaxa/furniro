@@ -1,8 +1,15 @@
 @import '../../assets/styles/media.scss';
 
-
 .browse {
   margin-block: 56px;
+
+  @include tablet {
+    margin-block: 40px;
+  }
+
+  @include mobile {
+    margin-block: 32px;
+  }
 
   &__inner {
     display: flex;
@@ -22,7 +29,6 @@
       flex-direction: column;
       row-gap: 30px;
     }
-
   }
 
   &__title {
@@ -37,5 +43,13 @@
     text-align: center;
     color: var(--color-gray-2);
     margin-bottom: 62px;
+
+    @media screen and (width <1300px) {
+      margin-bottom: 40px;
+    }
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
   }
 }

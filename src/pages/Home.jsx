@@ -4,14 +4,15 @@ import Browse from "../sections/Browse/Browse.jsx";
 import OurProducts from "../sections/OurProducs/OurProducts.jsx";
 import Inspiration from "../sections/Inspiration/Inspiration.jsx";
 import Share from "../sections/Share/Share.jsx";
+import Carousel from '../components/ui/Carousel.jsx';
 
 const Home = () => {
   return (
     <div>
       <Hero />
       <Browse />
-      {/* <OurProducts /> */}
-      {/* <Inspiration /> */}
+      <OurProducts />
+      <Inspiration />
       {/* <Share /> */}
     </div>
   )

@@ -1,3 +1,5 @@
+@import '../../assets/styles/media.scss';
+
 .product-card {
   background-color: #f4f5f7;
   position: relative;
@@ -7,6 +9,16 @@
     width: 285px;
     height: 301px;
     overflow: hidden;
+
+
+
+
+
+
+    @include mobile-s {
+      width: 285px;
+    height: 301px;
+    }
   }
 
   &__image {
@@ -130,4 +142,3 @@
 .red {
   background-color: #E97171;
 }
-
