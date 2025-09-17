@@ -8,15 +8,19 @@
   background: url("src/assets/images/hero-background.jpg") no-repeat center;
   background-size: cover;
 
-  @media (width <= 1300px) {
+  @media (width <=1300px) {
     background: url("src/assets/images/hero-bg-small.jpg") no-repeat center;
     background-size: cover;
-    }
+  }
 
   @include tablet {
     justify-content: center;
     padding-right: 0;
     background-size: cover;
+  }
+
+  @include mobile {
+    background: none;
   }
 
   &__inner {
@@ -27,6 +31,13 @@
     color: var(--color-gray-5);
     padding: 62px 43px 37px 39px;
     width: 643px;
+
+    @include mobile {
+      background-color: var(--color-banana);
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-block: 40px;
+    }
   }
 
   &__title {
@@ -35,6 +46,11 @@
     font-size: 52px;
     line-height: 125%;
     margin-bottom: 17px;
+
+    @include mobile {
+      
+      font-size: 38px;
+    }
   }
 
   &__title-mini {

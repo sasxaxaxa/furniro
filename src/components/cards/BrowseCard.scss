@@ -1,3 +1,5 @@
+@import '../../assets/styles/media.scss';
+
 .browse-card {
   display: flex;
   flex-direction: column;
@@ -10,6 +12,21 @@
     width: 381px;
     height: 480px;
     overflow: hidden;
+
+    @media (width <=1300px) {
+      width: 285px;
+      height: 359px;
+    }
+
+    @include tablet {
+      width: 209px;
+      height: 263px;
+    }
+
+    @include mobile {
+      width: 285px;
+      height: 359px;
+    }
   }
 
   &__image {
