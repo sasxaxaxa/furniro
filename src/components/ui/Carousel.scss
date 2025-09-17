@@ -1,10 +1,16 @@
+@import '../../assets/styles/media.scss';
+
 .slider {
-  padding-inline: 100px;
-  padding-block: 100px;
   max-width: 1000px;
 
   .slick-list {
     margin: 0 -12px;
+  }
+
+  @include tablet {
+    max-width: 500px;
+    margin-inline: 100px;
+    padding-inline: 100px;
   }
 }
 

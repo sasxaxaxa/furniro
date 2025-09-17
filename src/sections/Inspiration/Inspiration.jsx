@@ -10,7 +10,7 @@ const buttonIcon = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 
 const Inspiration = () => {
 
- const sliderRef = useRef(null);
+  const sliderRef = useRef(null);
 
   return (
     <section className="inspiration">
@@ -27,13 +27,21 @@ const Inspiration = () => {
           style="inspiration"
         />
       </div>
-      <div className="inspiration__second-column">
+      <div className="inspiration__second-column container-mobile">
         <Carousel sliderRef={sliderRef} />
-
+        {/* 
         <Button
           icon={buttonIcon}
           onClick={() => sliderRef.current.slickNext()}
           className="inspiration-carousel-button"
+        /> */}
+
+        <Button
+          label="lalaalal"
+          onClick={() => sliderRef.current.slickNext()}
+          className="inspiration-carousel-button"
+          style="yellow"
+          mode="slider-draft"
         />
       </div>
     </section>

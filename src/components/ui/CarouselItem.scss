@@ -1,3 +1,5 @@
+@import '../../assets/styles/media.scss';
+
 .carousel-item {
   position: relative;
 
@@ -5,6 +7,16 @@
     width: 372px;
     height: 486px;
     object-fit: cover;
+
+    @include tablet {
+      width: 286px;
+      height: 374px;
+    }
+
+    @include mobile {
+      width: 241px;
+      height: 315px;
+    }
   }
 
   &__info {
@@ -16,6 +28,15 @@
     padding-block: 32px;
     backdrop-filter: blur(3px);
     background: rgba(255, 255, 255, 0.72);
+
+    @include tablet {
+      width: 200px;
+      bottom: 10%;
+      left: 10%;
+
+      padding-left: 24px;
+    padding-block: 24px;
+    }
   }
 
   &__title {
@@ -24,6 +45,11 @@
     font-size: 28px;
     line-height: 120%;
     color: var(--color-gray-4);
+
+    @include tablet {
+      font-size: 20px;
+
+    }
   }
 
   &__description {

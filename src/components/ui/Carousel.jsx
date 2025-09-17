@@ -17,23 +17,16 @@ import CarouselItem from './CarouselItem.jsx';
 
 const Carousel = ({ sliderRef }) => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
     ],
@@ -63,7 +56,13 @@ const Carousel = ({ sliderRef }) => {
 
   return (
 
-    <Slider {...settings} ref={sliderRef} className="container slider">
+    <Slider
+    style={{
+      paddingInline: "10px",
+      paddingBlock: "44px"
+    
+    }}
+    {...settings} ref={sliderRef} className="container slider">
       {slides.map((slide, index) => (
         <div key={index} className="img-container">
           {slide}
