@@ -43,6 +43,42 @@ const actionsLinks = [
   }
 ]
 
+
+const mobileLinks = [
+  {
+    label: "Profile",
+    href: "/"
+  },
+  {
+    label: "Search",
+    href: "/"
+  },
+  {
+    label: "Follow",
+    href: "/"
+  },
+  {
+    label: "Cart",
+    href: "/"
+  },
+  {
+    label: "Home",
+    href: "/"
+  },
+  {
+    label: "Shop",
+    href: "/shop"
+  },
+  {
+    label: "About",
+    href: "/"
+  },
+  {
+    label: "Contact",
+    href: "/"
+  },
+]
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -80,13 +116,26 @@ const Header = () => {
       <div className={`header__overlay ${isOpen ? 'active' : ''}`}>
         <nav className="header__overlay-nav">
           <ul className="header__overlay-nav-list">
-            {headerLinks.map((link, index) => (
+            {mobileLinks.slice(0, 4).map((link, index) => (
+              <li key={index} className="header__overlay-nav-item mobile-only">
+                <Link to={link.href} className="header__overlay-nav-link mobile-only">{link.label}</Link>
+              </li>
+            ))}
+
+
+            {mobileLinks.slice(4, 8).map((link, index) => (
               <li key={index} className="header__overlay-nav-item">
                 <Link to={link.href} className="header__overlay-nav-link">{link.label}</Link>
               </li>
             ))}
+
+
           </ul>
         </nav>
+
+
+
+
       </div>
     </header>
   );
