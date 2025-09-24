@@ -29,19 +29,12 @@ const Inspiration = () => {
       </div>
       <div className="inspiration__second-column container-mobile">
         <Carousel sliderRef={sliderRef} />
-        {/* 
         <Button
-          icon={buttonIcon}
           onClick={() => sliderRef.current.slickNext()}
           className="inspiration-carousel-button"
-        /> */}
-
-        <Button
-          label="lalaalal"
-          onClick={() => sliderRef.current.slickNext()}
-          className="inspiration-carousel-button"
-          style="yellow"
+          style="white"
           mode="slider-draft"
+          icon={buttonIcon}
         />
       </div>
     </section>

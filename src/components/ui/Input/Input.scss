@@ -1,8 +1,16 @@
+@import '../../../assets/styles/media.scss';
+
 .input {
   &__form {
     display: flex;
     flex-direction: row;
     column-gap: 11px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+    }
+
   }
 
   &__field {
@@ -13,6 +21,10 @@
 
     border-bottom: 1px solid #000;
     padding-bottom: 3px;
+
+    @include tablet {
+      width: 178px;
+    }
 
   }
 }

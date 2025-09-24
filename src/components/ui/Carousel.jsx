@@ -9,11 +9,8 @@ import image4 from '../../assets/images/slider/image4.jpg';
 import image5 from '../../assets/images/slider/image5.jpg';
 import image6 from '../../assets/images/slider/image6.jpg';
 
-
-
 import './Carousel.scss'
 import CarouselItem from './CarouselItem.jsx';
-
 
 const Carousel = ({ sliderRef }) => {
   const settings = {
@@ -63,12 +60,12 @@ const Carousel = ({ sliderRef }) => {
   return (
 
     <Slider
-    style={{
-      paddingInline: "10px",
-      paddingBlock: "44px"
-    
-    }}
-    {...settings} ref={sliderRef} className="container slider">
+      style={{
+        paddingInline: "10px",
+        paddingBlock: "44px"
+
+      }}
+      {...settings} ref={sliderRef} className="container slider">
       {slides.map((slide, index) => (
         <div key={index} className="img-container">
           {slide}

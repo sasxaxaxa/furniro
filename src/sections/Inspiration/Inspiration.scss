@@ -6,7 +6,7 @@
 
   padding-left: 100px;
   padding-bottom: 100px;
-  
+
   gap: 42px;
   overflow: hidden;
   background-color: #FCF8F3;
@@ -57,7 +57,7 @@
       align-items: center;
     }
 
-    @media (width <=1300px) and (width >= 1024px) {
+    @media (width <=1300px) and (width >=1024px) {
       min-width: 300px;
     }
   }
@@ -74,10 +74,21 @@
 
   &-carousel-button {
     position: absolute;
-    bottom: 50%;
+    bottom: 48%;
+    right: 23%;
+
+    @media screen and (width <=1500px) {
+      right: 33%;
+
+    }
+
+    @include laptop {
+      left: 43%;
+    }
 
     @include tablet {
-      bottom: 10%;
+      left: 50%;
+      bottom: -10%;
     }
   }
 }

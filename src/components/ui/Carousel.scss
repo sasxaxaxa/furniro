@@ -12,8 +12,6 @@
     margin-inline: 100px;
     padding-inline: 100px;
   }
-
-  
 }
 
 .img-container {
@@ -46,7 +44,7 @@
 }
 
 .slick-slide {
-  display: flex !important;
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;

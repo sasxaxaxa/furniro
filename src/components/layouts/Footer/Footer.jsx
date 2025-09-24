@@ -29,7 +29,7 @@ const footerItems = [
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer__inner container">
+      <div className="footer__inner">
         <div className="footer__first-column">
           <Logo
             className="footer__logo"
@@ -61,44 +61,9 @@ const Footer = () => {
           ))}
         </nav>
 
-        {/* <ul className="footer__link">
-
-        </ul>
-        <ul className="footer__help">
-
-        </ul>
-        <ul className="footer__subscribe">
-
-        </ul> */}
-
-        {/* <ul className="footer__list-big">
-          {footerItems.map(({column, items}, index) => (
-            <li key={index}>
-              <p className="footer__list-big-item">{column}</p>
-              <ul className="footer__list-small">
-                {Array.isArray(items) ? (
-                  items.map((item, i) => (
-                    <li key={i} className="footer__list-small-item">
-                      <a
-                        href='/'
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))
-                ) : (
-                  <li>
-                    <Input />
-                  </li>
-                )}
-              </ul>
-            </li>
-          ))}
-        </ul> */}
-
 
       </div>
-      <div className="footer__copyright container">
+      <div className="footer__copyright">
         <p>2023 funiro. All rights reverved</p>
       </div>
     </footer>

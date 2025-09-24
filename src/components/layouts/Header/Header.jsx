@@ -121,20 +121,13 @@ const Header = () => {
                 <Link to={link.href} className="header__overlay-nav-link mobile-only">{link.label}</Link>
               </li>
             ))}
-
-
             {mobileLinks.slice(4, 8).map((link, index) => (
               <li key={index} className="header__overlay-nav-item">
                 <Link to={link.href} className="header__overlay-nav-link">{link.label}</Link>
               </li>
             ))}
-
-
           </ul>
         </nav>
-
-
-
 
       </div>
     </header>
